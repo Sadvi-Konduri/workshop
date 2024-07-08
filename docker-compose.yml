@@ -1,0 +1,16 @@
+version:'3.8'
+services:
+#backend
+  server:
+    build:./server
+    container_name:server
+    ports:
+    -"3001:3001"
+    enviroment
+    -mongodb+srv://b845876:N0bizRkCjovi3F3F@cluster0.f2htv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+#frontend
+  client:
+    build:./client
+    container_name:client
+  ports:
+    -"3000:80"
