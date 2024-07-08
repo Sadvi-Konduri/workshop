@@ -60,4 +60,7 @@ async function StartServer() {
         console.log('Server live');
     })
 }
+function Testing(){
+    return 0;
+}
 StartServer();
