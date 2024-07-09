@@ -13,6 +13,7 @@ root.render(
   <div>
    <Router>
     <Navbar/>
+    <p>HELLO WELCOME</p>
     <Routes>
       <Route path="/register" element={<Register/>}/>
       <Route path="/login" element={<Login/>}/>

@@ -1,4 +1,4 @@
-const express = require('express')
+/*const express = require('express')
 const {ApolloServer,gql} = require('apollo-server-express')
 const typeDefs = require('./schema')
 const resolvers = require('./resolvers')
@@ -59,8 +59,10 @@ async function StartServer() {
     app.listen(port,()=> {
         console.log('Server live');
     })
+}*/
+
+function add(a,b){
+    return a+b;
 }
-function Testing(){
-    return 0;
-}
-StartServer();
+
+module.exports=add;
